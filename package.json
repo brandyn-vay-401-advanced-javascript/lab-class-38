@@ -14,19 +14,23 @@
     "react-router-dom": "5.0.1",
     "react-scripts": "3.1.1",
     "superagent": "5.1.0",
-    "uuid": "3.3.3"
+    "uuid": "3.3.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
